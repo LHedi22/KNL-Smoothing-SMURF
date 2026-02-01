@@ -1,0 +1,388 @@
+{
+  "application": {
+    "id": "application_accepted_2025",
+    "status": "submitted",
+    "personalInfo": {
+      "firstName": "Jennifer",
+      "lastName": "Chen",
+      "email": "jennifer.chen@techmail.com",
+      "phone": "(555) 234-7892",
+      "dateOfBirth": "1985-11-14",
+      "ssn": "234-56-7890",
+      "address": "1842 Oakwood Drive",
+      "city": "Seattle",
+      "state": "WA",
+      "zipCode": "98102"
+    },
+    "employmentInfo": {
+      "employmentStatus": "Employed",
+      "jobTitle": "Senior Product Manager",
+      "employer": "CloudTech Solutions",
+      "industry": "Technology",
+      "yearsEmployed": 6,
+      "monthlyIncome": 5833
+    },
+    "financialInfo": {
+      "creditScore": 728,
+      "totalDebt": 134432,
+      "monthlyExpenses": 3400,
+      "savingsAmount": 42000,
+      "assetValue": 285000,
+      "bankruptcyHistory": false
+    },
+    "loanRequest": {
+      "loanAmount": 9000,
+      "loanPurpose": "Credit Card Consolidation",
+      "loanTerm": 36,
+      "interestRate": 7.8
+    },
+    "createdAt": "2025-01-29T14:22:00.000Z",
+    "updatedAt": "2025-01-30T10:18:00.000Z"
+  },
+  "assessmentStatuses": {
+    "initial": {
+      "id": "assessment_accepted_2025",
+      "applicationId": "application_accepted_2025",
+      "currentStage": "model_ensemble",
+      "stages": [
+        {
+          "stage": "document_ocr",
+          "status": "completed",
+          "progress": 100,
+          "estimatedTimeMs": 2000,
+          "startedAt": "2025-01-30T10:18:00.000Z",
+          "completedAt": "2025-01-30T10:18:02.000Z"
+        },
+        {
+          "stage": "feature_extraction",
+          "status": "completed",
+          "progress": 100,
+          "estimatedTimeMs": 3000,
+          "startedAt": "2025-01-30T10:18:02.000Z",
+          "completedAt": "2025-01-30T10:18:06.000Z"
+        },
+        {
+          "stage": "similarity_search",
+          "status": "completed",
+          "progress": 100,
+          "estimatedTimeMs": 4000,
+          "startedAt": "2025-01-30T10:18:06.000Z",
+          "completedAt": "2025-01-30T10:18:11.000Z"
+        },
+        {
+          "stage": "model_ensemble",
+          "status": "in_progress",
+          "progress": 55,
+          "estimatedTimeMs": 5000,
+          "startedAt": "2025-01-30T10:18:11.000Z"
+        },
+        {
+          "stage": "risk_aggregation",
+          "status": "pending",
+          "progress": 0,
+          "estimatedTimeMs": 3000
+        },
+        {
+          "stage": "explanation_generation",
+          "status": "pending",
+          "progress": 0,
+          "estimatedTimeMs": 2000
+        }
+      ],
+      "overallProgress": 71,
+      "status": "processing"
+    },
+    "completed": {
+      "id": "assessment_accepted_2025",
+      "applicationId": "application_accepted_2025",
+      "currentStage": "explanation_generation",
+      "stages": [
+        {
+          "stage": "document_ocr",
+          "status": "completed",
+          "progress": 100,
+          "estimatedTimeMs": 2000,
+          "startedAt": "2025-01-30T10:18:00.000Z",
+          "completedAt": "2025-01-30T10:18:02.000Z"
+        },
+        {
+          "stage": "feature_extraction",
+          "status": "completed",
+          "progress": 100,
+          "estimatedTimeMs": 3000,
+          "startedAt": "2025-01-30T10:18:02.000Z",
+          "completedAt": "2025-01-30T10:18:06.000Z"
+        },
+        {
+          "stage": "similarity_search",
+          "status": "completed",
+          "progress": 100,
+          "estimatedTimeMs": 4000,
+          "startedAt": "2025-01-30T10:18:06.000Z",
+          "completedAt": "2025-01-30T10:18:11.000Z"
+        },
+        {
+          "stage": "model_ensemble",
+          "status": "completed",
+          "progress": 100,
+          "estimatedTimeMs": 5000,
+          "startedAt": "2025-01-30T10:18:11.000Z",
+          "completedAt": "2025-01-30T10:18:17.000Z"
+        },
+        {
+          "stage": "risk_aggregation",
+          "status": "completed",
+          "progress": 100,
+          "estimatedTimeMs": 3000,
+          "startedAt": "2025-01-30T10:18:17.000Z",
+          "completedAt": "2025-01-30T10:18:20.000Z"
+        },
+        {
+          "stage": "explanation_generation",
+          "status": "completed",
+          "progress": 100,
+          "estimatedTimeMs": 2000,
+          "startedAt": "2025-01-30T10:18:20.000Z",
+          "completedAt": "2025-01-30T10:18:22.000Z"
+        }
+      ],
+      "overallProgress": 100,
+      "status": "completed"
+    }
+  },
+  "assessmentResult": {
+    "id": "assessment_accepted_2025",
+    "applicationId": "application_accepted_2025",
+    "status": "completed",
+    "riskScore": {
+      "overallScore": 18,
+      "level": "low",
+      "confidence": 0.93,
+      "factors": [
+        {
+          "name": "Strong Annual Income",
+          "impact": 0.38,
+          "direction": "positive",
+          "explanation": "Verified income of $70,000 demonstrates strong payment capacity relative to loan size."
+        },
+        {
+          "name": "Healthy Average Balance",
+          "impact": 0.22,
+          "direction": "positive",
+          "explanation": "Average current balance of $33,608 indicates good financial management."
+        },
+        {
+          "name": "Clean Delinquency History",
+          "impact": 0.19,
+          "direction": "positive",
+          "explanation": "Zero delinquencies in past 24 months shows consistent payment behavior."
+        },
+        {
+          "name": "Mortgage Homeownership",
+          "impact": 0.14,
+          "direction": "positive",
+          "explanation": "Mortgage holder with 2 mortgage accounts demonstrates financial stability."
+        },
+        {
+          "name": "Modest Loan Amount",
+          "impact": 0.11,
+          "direction": "positive",
+          "explanation": "$9,000 request represents only 12.9% of annual income, very manageable."
+        }
+      ]
+    },
+    "modelContributions": [
+      {
+        "modelName": "LightGBM",
+        "weight": 0.40,
+        "score": 14,
+        "confidence": 0.91,
+        "isKnnSmoothed": true,
+        "kValue": 64,
+        "keywords": ["Gradient boosting", "Tree-based", "Fast inference"]
+      },
+      {
+        "modelName": "XGBoost",
+        "weight": 0.35,
+        "score": 16,
+        "confidence": 0.94,
+        "isKnnSmoothed": false,
+        "kValue": null,
+        "keywords": ["Boosted trees", "High signal", "Non-linear"]
+      },
+      {
+        "modelName": "Neural Risk Net",
+        "weight": 0.25,
+        "score": 26,
+        "confidence": 0.87,
+        "isKnnSmoothed": true,
+        "kValue": 50,
+        "keywords": ["Deep learning", "Embedding", "Sequence aware"]
+      }
+    ],
+    "similarCases": [
+      {
+        "id": "902b6624-ba1d-4ecc-bba1-9d563e5da09c",
+        "similarity": 0.8854057,
+        "applicantProfile": "Tech professional, credit card consolidation, stable income",
+        "loanAmount": 12000,
+        "outcome": "approved",
+        "riskScore": 14
+      },
+      {
+        "id": "3d69478d-09f7-463d-9ed2-968587a01ab0",
+        "similarity": 0.88450444,
+        "applicantProfile": "Verified income, slightly higher utilization, mortgage holder",
+        "loanAmount": 15000,
+        "outcome": "manual_review",
+        "riskScore": 28
+      },
+      {
+        "id": "b24c9840-b710-4441-b51a-4777dcdadd13",
+        "similarity": 0.88334596,
+        "applicantProfile": "Homeowner, healthy balances, low delinquency",
+        "loanAmount": 10000,
+        "outcome": "approved",
+        "riskScore": 16
+      },
+      {
+        "id": "82a9f9c9-59b6-4b42-9ad9-9b9ff6136fce",
+        "similarity": 0.883141,
+        "applicantProfile": "Professional worker, peer approval cluster",
+        "loanAmount": 11000,
+        "outcome": "approved",
+        "riskScore": 17
+      },
+      {
+        "id": "848e1075-c98b-4373-b6bf-8ce025ad64b9",
+        "similarity": 0.87947536,
+        "applicantProfile": "Consistent repayment pattern, verified employment",
+        "loanAmount": 13000,
+        "outcome": "approved",
+        "riskScore": 19
+      }
+    ],
+    "anomalies": [],
+    "explanation": "Application demonstrates strong creditworthiness across all major risk factors. Verified income significantly exceeds loan requirement, clean payment history, and mortgage ownership indicate financial stability. Similar historical cases with these characteristics resulted in successful repayment 94% of the time. The modest loan size relative to income further reduces risk exposure.",
+    "recommendations": [
+      "APPROVE application with standard terms.",
+      "Offer interest rate of 7.8% based on strong credit profile.",
+      "Consider cross-selling additional financial products given excellent standing.",
+      "Standard 36-month term appropriate for this loan size and profile."
+    ],
+    "fraudCheck": {
+      "overallDecision": "OK",
+      "summary": "All verification checks passed. Application shows consistent patterns with legitimate, low-risk borrowers.",
+      "confidence": 0.95,
+      "realNormals": [
+        {
+          "label": "Case 0",
+          "ifScore": 12.45,
+          "ratioScore": 8.92,
+          "finalScore": 11.04,
+          "decision": "OK",
+          "notes": "Profile consistent with verified tech professionals."
+        },
+        {
+          "label": "Case 1",
+          "ifScore": 15.23,
+          "ratioScore": 11.34,
+          "finalScore": 13.67,
+          "decision": "OK"
+        },
+        {
+          "label": "Case 2",
+          "ifScore": 9.87,
+          "ratioScore": 7.45,
+          "finalScore": 8.89,
+          "decision": "OK"
+        },
+        {
+          "label": "Case 3",
+          "ifScore": 13.56,
+          "ratioScore": 10.12,
+          "finalScore": 12.18,
+          "decision": "OK"
+        },
+        {
+          "label": "Case 4",
+          "ifScore": 11.34,
+          "ratioScore": 9.23,
+          "finalScore": 10.48,
+          "decision": "OK"
+        }
+      ],
+      "syntheticFraud": {
+        "label": "Synthetic Fraud Scenario",
+        "ifScore": 68.92,
+        "ratioScore": 100,
+        "finalScore": 81.14,
+        "decision": "FLAG",
+        "notes": "Clear separation from legitimate application pattern."
+      },
+      "contributingFeatures": [
+        {
+          "name": "Employment verification",
+          "impact": 0.32,
+          "direction": "decrease",
+          "explanation": "Source verified employment with CloudTech Solutions confirmed."
+        },
+        {
+          "name": "Income consistency",
+          "impact": 0.28,
+          "direction": "decrease",
+          "explanation": "Stated income matches tax records and employer verification."
+        },
+        {
+          "name": "Identity validation",
+          "impact": 0.24,
+          "direction": "decrease",
+          "explanation": "All identity documents validated against credit bureau and public records."
+        }
+      ]
+    }
+  },
+  "formDefaults": {
+    "documents": {
+      "application": null
+    },
+    "personalInfo": {
+      "firstName": "Jennifer",
+      "lastName": "Chen",
+      "email": "jennifer.chen@techmail.com",
+      "phone": "(555) 234-7892",
+      "nationalId": "234-56-7890",
+      "dateOfBirth": "11/14/1985",
+      "streetAddress": "1842 Oakwood Drive",
+      "city": "Seattle",
+      "delegation": "King County",
+      "postalCode": "98102"
+    },
+    "loanDetails": {
+      "loanAmountRequested": 9000,
+      "loanTerm": 36,
+      "loanPurpose": "Credit Card Consolidation"
+    },
+    "employmentIncome": {
+      "employmentStatus": "Employed",
+      "jobTitle": "Senior Product Manager",
+      "employerName": "CloudTech Solutions",
+      "yearsAtCurrentJob": 6,
+      "monthlyIncome": 5833,
+      "incomeVerificationStatus": "Source Verified"
+    },
+    "creditProfile": {
+      "openCreditAccounts": 12,
+      "totalCreditAccounts": 29,
+      "mortgageAccounts": 2,
+      "recentDelinquencies": 0,
+      "recentCreditInquiries": 1,
+      "totalRevolvingBalance": 5387,
+      "totalCurrentBalance": 134432,
+      "pastBankruptcy": false
+    },
+    "housingInfo": {
+      "homeOwnershipStatus": "MORTGAGE"
+    }
+  }
+}

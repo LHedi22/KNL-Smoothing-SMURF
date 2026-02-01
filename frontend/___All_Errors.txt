@@ -1,0 +1,15 @@
+CorrelationId: 08c91442-bc7e-4429-9cf3-d024a6dfc0da
+UTC DateTime: 01/31/2026 20:38:28
+
+The following files/folders have not been downloaded
+0. frontend/.next/dev/lock
+1. frontend/node_modules/client-only/index.js
+2. frontend/node_modules/zod/src/v3/locales
+3. frontend/node_modules/zod/src/v3/tests
+4. frontend/node_modules/zod/src/v4
+5. frontend/node_modules/zod/src/v4-mini
+6. frontend/node_modules/zod/v3
+7. frontend/node_modules/zod/v4
+8. frontend/node_modules/zod/v4-mini
+9. frontend/public
+10. frontend/styles
